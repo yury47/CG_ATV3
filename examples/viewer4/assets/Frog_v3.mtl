@@ -1,7 +1,4 @@
-# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 12.12.2011 11:27:45
-
-newmtl 12268_banjofrog_
+newmtl Frog_v3
 	Ns 56.0000
 	Ni 1.5000
 	d 1.0000
@@ -12,5 +9,5 @@ newmtl 12268_banjofrog_
 	Kd 1.0000 1.0000 1.0000
 	Ks 0.1800 0.1800 0.1800
 	Ke 0.0000 0.0000 0.0000
-	map_Ka 12268_banjofrog_diffuse.jpg
-	map_Kd 12268_banjofrog_diffuse.jpg
+	map_Ka maps/Frog_v3_diff.jpg
+	map_Kd maps/Frog_v3_diff.jpg
