@@ -228,3 +228,32 @@ Cor de saída (outColor):
 - Fragmentos frontais recebem a cor calculada com o modelo de iluminação.
 - Fragmentos traseiros recebem uma tonalidade vermelha baseada na intensidade média da cor.
 
+**texture.vert**\
+Este é o shader de vértice, responsável por transformar as coordenadas dos vértices da malha para o espaço de projeção, além de calcular e transmitir variáveis interpoladas para o shader de fragmento.
+
+Suas principais componentes são:
+
+Entradas:
+
+- `position`: Coordenadas do vértice no espaço do objeto.
+- `normal`: Vetor normal do vértice.
+- `texCoord`: Coordenadas de textura do vértice.
+
+Uniformes:
+
+- Matrizes de transformação (model, view, projection) para calcular a posição final do vértice no espaço da tela.
+- Matrizes auxiliares para transformação de normais e cálculo de posições no espaço do objeto.
+
+Transformações:
+
+- Posição: Os vértices são transformados do espaço do objeto para o espaço do mundo e, finalmente, para o espaço de projeção.
+- Normais: As normais dos vértices são ajustadas para o espaço do mundo utilizando a matriz inversa-transposta do modelo.
+
+Saídas (para o shader de fragmento):
+
+- `fragPObj`: Posição do vértice no espaço do objeto, usada para cálculos de mapeamento.
+- `fragNObj`: Normal no espaço do objeto, utilizada nos modos de mapeamento.
+- `fragTexCoord`: Coordenadas de textura originais da malha.
+- `fragN`, `fragL`, `fragV`: Normais, direção da luz e direção do observador interpoladas no espaço do fragmento.
+
+Este shader prepara os dados necessários para o shader de fragmento, incluindo a geometria da malha, as normais e as coordenadas de textura, além de aplicar as transformações necessárias para exibição correta na tela.
