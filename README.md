@@ -159,14 +159,18 @@ Este shader aplica um efeito de escurecimento baseado na profundidade. Vértices
 
 **blinnphong.frag**\
 Este arquivo é o fragment shader responsável por calcular a cor de cada fragmento da superfície utilizando o modelo de iluminação Blinn-Phong. Ele considera as propriedades do material e da luz para gerar o resultado final de iluminação.
+
 Tem como entradas (`in`):
 - fragN: O vetor normal da superfície, interpolado para o fragmento atual.
 - fragL: O vetor direção da luz, interpolado para o fragmento atual.
 - fragV: O vetor direção do observador (câmera) relativo ao fragmento.
+
 As propriedades de material e luz são dadas por:
 - Ia, Id, Is: Componentes de luz ambiente, difusa e especular, respectivamente.
 - Ka, Kd, Ks: Coeficientes de reflexão do material para luz ambiente, difusa e especular, respectivamente.
 - shininess: O expoente de brilho usado no cálculo especular, controlando o "foco" do reflexo especular.
+
 Sua saída (`out`) possui:
 - outColor: Cor final do fragmento renderizado.
+
 Ao final a função BlinnPhong realiza os cálculos de iluminação em três etapas.
