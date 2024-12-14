@@ -151,7 +151,7 @@ Este arquivo define o Fragment Shader da aplicação, responsável por determina
 Este arquivo define o Vertex Shader da aplicação, responsável por transformar as coordenadas dos vértices do modelo de um espaço de objeto para o espaço de tela e calcular as propriedades de cor e profundidade dos vértices. Função principal do shader realiza a transformação e o cálculo de cor do vértice:
 
 - Em `vec4 posEyeSpace = viewMatrix * modelMatrix * vec4(inPosition, 1);` a posição do vértice é transformada para o espaço de visão (olho), utilizando a multiplicação da matriz de modelo e a matriz de visualização.
-- Em `float i = 1.0 - (-posEyeSpace.z / 3.0);` a profundidade do vértice no espaço de visão é calculada a partir da coordenada Z do vértice (posEyeSpace.z). Esse valor é utilizado para ajustar a intensidade de cor, criando um efeito de profundidade.
+- Em `float i = 1.0 - (-posEyeSpace.z / 3.0);` a profundidade do vértice no espaço de visão é calculada a partir da coordenada Z do vértice (`posEyeSpace.z`). Esse valor é utilizado para ajustar a intensidade de cor, criando um efeito de profundidade.
 - Em `fragColor = vec4(i, i, i, 1) * color;` a cor final do vértice é calculada, ajustando o componente de intensidade i com base na profundidade. Isso cria um efeito visual onde objetos mais distantes se tornam mais escuros.
 - Em `gl_Position = projMatrix * posEyeSpace;` a posição do vértice é transformada para o espaço de projeção, preparando o vértice para a renderização na tela.
 
@@ -161,17 +161,17 @@ Este shader aplica um efeito de escurecimento baseado na profundidade. Vértices
 Este arquivo é o fragment shader responsável por calcular a cor de cada fragmento da superfície utilizando o modelo de iluminação Blinn-Phong. Ele considera as propriedades do material e da luz para gerar o resultado final de iluminação.
 
 Tem como entradas (`in`):
-- fragN: O vetor normal da superfície, interpolado para o fragmento atual.
-- fragL: O vetor direção da luz, interpolado para o fragmento atual.
-- fragV: O vetor direção do observador (câmera) relativo ao fragmento.
+- `fragN`: O vetor normal da superfície, interpolado para o fragmento atual.
+- `fragL`: O vetor direção da luz, interpolado para o fragmento atual.
+- `fragV`: O vetor direção do observador (câmera) relativo ao fragmento.
 
 As propriedades de material e luz são dadas por:
-- Ia, Id, Is: Componentes de luz ambiente, difusa e especular, respectivamente.
-- Ka, Kd, Ks: Coeficientes de reflexão do material para luz ambiente, difusa e especular, respectivamente.
+- `Ia`, `Id`, `Is`: Componentes de luz ambiente, difusa e especular, respectivamente.
+- `Ka`, `Kd`, `Ks`: Coeficientes de reflexão do material para luz ambiente, difusa e especular, respectivamente.
 - shininess: O expoente de brilho usado no cálculo especular, controlando o "foco" do reflexo especular.
 
 Sua saída (`out`) possui:
-- outColor: Cor final do fragmento renderizado.
+- `outColor`: Cor final do fragmento renderizado.
 
 Ao final a função BlinnPhong realiza os cálculos de iluminação em três etapas. A lógica da main combina as componentes ambiente, difusa e especular para calcular a cor final: `outColor = ambientColor + diffuseColor + specularColor`.
 
@@ -179,26 +179,26 @@ Ao final a função BlinnPhong realiza os cálculos de iluminação em três eta
 Este arquivo é o vertex shader, responsável por transformar as posições dos vértices e calcular os vetores necessários para o modelo de iluminação.
 
 Tem como entradas (`in`):
-- inPosition: Coordenadas dos vértices do modelo.
-- inNormal: Vetores normais associados aos vértices, utilizados para os cálculos de iluminação.
+- `inPosition`: Coordenadas dos vértices do modelo.
+- `inNormal`: Vetores normais associados aos vértices, utilizados para os cálculos de iluminação.
 
 Uniforms (Matrizes e Luz):
 
-- modelMatrix: Matriz de transformação do modelo no espaço mundial.
-- viewMatrix: Matriz de visão para converter as coordenadas para o espaço da câmera.
-- projMatrix: Matriz de projeção para transformar coordenadas para o espaço de tela.
-- normalMatrix: Matriz usada para corrigir a transformação das normais no espaço da câmera.
-- lightDirWorldSpace: Direção da luz no espaço mundial.
+- `modelMatrix`: Matriz de transformação do modelo no espaço mundial.
+- `viewMatrix`: Matriz de visão para converter as coordenadas para o espaço da câmera.
+- `projMatrix`: Matriz de projeção para transformar coordenadas para o espaço de tela.
+- `normalMatrix`: Matriz usada para corrigir a transformação das normais no espaço da câmera.
+- `lightDirWorldSpace`: Direção da luz no espaço mundial.
 
-Saídas (out):
+Saídas (`out`):
 
-- fragV: Vetor do fragmento para a câmera, no espaço da câmera.
-- fragL: Vetor direção da luz, no espaço da câmera.
-- fragN: Vetor normal da superfície, corrigido e transformado para o espaço da câmera.
+- `fragV`: Vetor do fragmento para a câmera, no espaço da câmera.
+- `fragL`: Vetor direção da luz, no espaço da câmera.
+- `fragN`: Vetor normal da superfície, corrigido e transformado para o espaço da câmera.
 
 Transforma as coordenadas dos vértices para o espaço da câmera, ajusta o vetor normal do espaço do modelo para o espaço da câmerae e então a luz é transformada para o espaço da câmera, com o vetor invertido para representar a direção que ela "atinge" o objeto.
 
-A lógica da main calcula as transformações para posição, normais e luz. Define as variáveis de saída (fragV, fragL, fragN) que serão interpoladas para os fragmentos. Calcula a posição final do vértice no espaço de tela.
+A lógica da main calcula as transformações para posição, normais e luz. Define as variáveis de saída (`fragV`, `fragL`, `fragN`) que serão interpoladas para os fragmentos. Calcula a posição final do vértice no espaço de tela.
 
 **texture.frag**\
 Este é o shader de fragmento, responsável por calcular a cor de cada fragmento da malha 3D considerando as propriedades do material, a iluminação e o mapeamento de textura. O shader implementa o modelo de reflexão de Blinn-Phong e suporta diferentes modos de mapeamento de textura (triplanar, cilíndrico, esférico e coordenadas diretas da malha).
@@ -207,18 +207,24 @@ Suas principais componentes são:
 
 Entradas (variáveis interpoladas):
 
-- fragN, fragL, fragV: Normais, direção da luz e direção do observador no espaço de fragmentos.
-- fragTexCoord: Coordenadas de textura fornecidas pela malha.
-- fragPObj, fragNObj: Posição e normais no espaço do objeto, usadas para cálculo de mapeamento alternativo.
+- `fragN`, `fragL`, `fragV`: Normais, direção da luz e direção do observador no espaço de fragmentos.
+- `fragTexCoord`: Coordenadas de textura fornecidas pela malha.
+- `fragPObj`, `fragNObj`: Posição e normais no espaço do objeto, usadas para cálculo de mapeamento alternativo.
 
 Uniformes (propriedades configuráveis):
 
-- Ia, Id, Is: Intensidades da luz ambiente, difusa e especular.
-- Ka, Kd, Ks: Coeficientes de material para luz ambiente, difusa e especular.
-- shininess: Expoente especular para controle de brilho.
-- diffuseTex: Textura difusa (amostrada via sampler2D).
-- mappingMode: Define o modo de mapeamento de textura:
+- `Ia`, `Id`, `Is`: Intensidades da luz ambiente, difusa e especular.
+- `Ka`, `Kd`, `Ks`: Coeficientes de material para luz ambiente, difusa e especular.
+- `shininess`: Expoente especular para controle de brilho.
+- `diffuseTex`: Textura difusa (amostrada via sampler2D).
+- `mappingMode`: Define o modo de mapeamento de textura:
    - 0: Triplanar.
    - 1: Cilíndrico.
    - 2: Esférico.
    - 3: Coordenadas diretas da malha.
+
+Cor de saída (outColor):
+
+- Fragmentos frontais recebem a cor calculada com o modelo de iluminação.
+- Fragmentos traseiros recebem uma tonalidade vermelha baseada na intensidade média da cor.
+
