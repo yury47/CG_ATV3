@@ -49,7 +49,7 @@ A interação do usuário é garantida por meio do mouse, permitindo rotacionar 
 Implementada por meio da rotação contínua de modelos com base na interação do usuário via TrackBall.
 
 ## Iluminação
-Baseada no modelo de iluminação Phong, permite controle preciso sobre a intensidade e reflexão de luz nos modelos.
+Baseada no modelo de iluminação Blinn-Phong, permite controle preciso sobre a intensidade e reflexão de luz nos modelos.
 
 ## Texturização
 Suporte ao carregamento de texturas externas e aplicação nos modelos por mapeamento UV. Um arquivo OBJ pode vir acompanhado de um arquivo .mtl opcional que contém a descrição das propriedades dos materiais de cada objeto. Ele inclui valores como o expoente especular (Ns), propriedades de reflexão ambiente (Ka), difusa (Kd) e especular (Ks), além do nome do mapa de textura que deve ser utilizado (e.g., map_Kd). Nossa implementação de `Model::loadObj`, que utiliza funções da biblioteca **TinyObjLoader**, carrega automaticamente a textura difusa, se ela existir. No método `Model::render`, chamado em `Window::onPaint`, a ativação da textura no pipeline de renderização é realizada. Após a ativação da unidade de textura, a função `glBindTexture` é chamada para associar o identificador de textura à unidade recém ativada.
