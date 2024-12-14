@@ -13,17 +13,17 @@ Permite a aplicação de texturas personalizadas (“mapeamento de imagem”) ao
 # Guia de Utilização
 A interação com o aplicativo é simples e intuitiva, permitindo uma experiência fluida para usuários de todos os níveis. 
 
-### Ajuste de Propriedades de Materiais e Luzes
+#### Ajuste de Propriedades de Materiais e Luzes
 
 É possível alterar os valores dos componentes RGB das constantes ka, kd, ks, Ia, Id e Is. Os ajustes podem ser feitos por meio de uma paleta de cores, clicando no quadrado de cor ao lado da constante que se deseja alterar, ou alterando diretamente os valores de cada componente RGB individualmenteo que pode ser feito de duas formas; clicando em cima da componente que se deseja alterar a arrastando o mouse para a direita ou esquerda, ou clicando duas vezes sobre a componente e digitar um valor específico. 
 
-### Constante de Espalhamento Especular:
+#### Constante de Espalhamento Especular:
 A constante que define o espalhamento do brilho especular pode ser aumentada ou diminuída diretamente pelo usuário.   
 
-### Rotação do Modelo e do Ponto de Luz
+#### Rotação do Modelo e do Ponto de Luz
 O objeto 3D pode ser rotacionado em todas as direções utilizando o mouse. Use o botão esquerdo do mouse para rotacionar o modelo em qualquer direção. A rotação é suave e precisa, proporcionando uma experiência de visualização imersiva. O ponto de iluminação também pode ser alterado usando o botão direito do mouse para ajustar a posição da luz em relação ao modelo.
 
-### Alteração entre Objetos
+#### Alteração entre Objetos
 Utilize o botão “Load 3D Model” para carregar diferentes arquivos .obj, que correspondem a diferentes espécies que se deseja estudar durante a execução do aplicativo.
 
 Essas funcionalidades permitem explorar e manipular os modelos e suas características de forma interativa e visualmente rica.
