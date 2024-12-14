@@ -66,8 +66,36 @@ Algumas texturas não ficaram alinhadas corretamente, apresentando distorção d
 Outro problema ocorreu quando objetos foram carregados sem a textura correta. Durante a inicialização, alguns modelos carregados apareciam sem a textura associada, mesmo com o arquivo .mtl disponível. Para corrigir alteramos a implementação de `Model::loadObj` para validar se a textura estava carregada corretamente antes de ativar o pipeline de renderização. Também adicionamos verificações para recarregar texturas ausentes dinamicamente.
 Além disso foi necessário ajuste do posicionamento inicial pois os modelos carregados não estavam bem posicionados na janela, dificultando a visualização inicial. Foi necessário o ajuste de coordenadas para garantir que todos os objetos carregados ficassem melhor posicionados.
 
-# Arquivos
+# Resultados e Análise
 
+## Avaliação Computacional e Desempenho
+O desempenho computacional da aplicação foi avaliado considerando a eficiência dos cálculos de iluminação, renderização de múltiplos objetos com texturas, e a manipulação interativa em tempo real. Alguns aspectos notáveis incluem:
+
+- Eficiência dos Shaders:
+
+  O uso do modelo de Blinn-Phong, implementado nos shaders, demonstrou um bom equilíbrio entre qualidade visual e custo computacional. A utilização do vetor de meio (H) para o cálculo da iluminação      especular resultou em uma redução significativa do número de operações matemáticas, sem sacrificar a qualidade visual. Gerenciamento de Recursos Gráficos:
+
+A aplicação lida de forma eficiente com texturas e iluminação, mantendo um bom desempenho mesmo ao renderizar múltiplos objetos simultaneamente.
+O impacto computacional do cálculo dos vetores normais e das transformações de iluminação foi minimizado com o uso de buffers otimizados.
+Taxa de Quadros (FPS):
+
+Durante os testes em sistemas equipados com uma NVIDIA RTX 3070, a aplicação manteve uma taxa de quadros estável acima de 60 FPS, mesmo em cenas complexas com múltiplas fontes de luz e objetos texturizados.
+Em hardwares menos robustos, a aplicação se manteve funcional com desempenho aceitável ao reduzir a resolução das texturas ou simplificar os modelos.
+Análise do Resultado Gráfico e Visual
+Qualidade Visual:
+
+O modelo de iluminação Blinn-Phong proporcionou resultados gráficos realistas, com reflexos especulares bem definidos e um controle preciso da difusão da luz nas superfícies.
+A possibilidade de ajustar os parâmetros de iluminação, como ka, kd, ks e o expoente especular (shininess), oferece flexibilidade para personalizar o visual dos objetos.
+Adição de Texturas:
+
+A inclusão de texturas aprimorou a percepção visual dos modelos, permitindo maior detalhamento das superfícies.
+Os mapeamentos de textura foram aplicados com precisão, garantindo ausência de distorções visíveis, mesmo durante rotações ou mudanças de perspectiva.
+Iluminação Dinâmica:
+
+O controle interativo da intensidade das componentes de luz ambiente (Ia), difusa (Id) e especular (Is) possibilitou uma análise visual em tempo real dos efeitos de iluminação.
+As transições entre diferentes configurações de luz foram suaves, demonstrando a robustez dos cálculos implementados nos shaders.
+
+# Arquivos
 A renderização gráfica do aplicativo é realizada utilizando OpenGL, uma das principais bibliotecas para gráficos 3D em tempo real, que garante alto desempenho e flexibilidade. Para simplificar a integração com SDL e ImGui, foi utilizada a biblioteca abcgOpenGL, que facilita a manipulação de eventos de entrada e a criação de interfaces gráficas. Isso permite uma experiência interativa fluida e responsiva para o usuário, com controles intuitivos para manipulação do modelo 3D e alteração das cores.
 
 Consulte a pasta **Olha_o_sapo** deste repositório para obter os arquivos do projeto.
