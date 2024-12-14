@@ -156,30 +156,17 @@ fmt/fast:
 .PHONY : fmt/fast
 
 #=============================================================================
-# Target rules for targets named Olha_o_sapo
+# Target rules for targets named Olha_o_sapo_v2
 
 # Build rule for target.
-Olha_o_sapo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Olha_o_sapo
-.PHONY : Olha_o_sapo
+Olha_o_sapo_v2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Olha_o_sapo_v2
+.PHONY : Olha_o_sapo_v2
 
 # fast build rule for target.
-Olha_o_sapo/fast:
-	$(MAKE) $(MAKESILENT) -f examples/Olha_o_sapo/CMakeFiles/Olha_o_sapo.dir/build.make examples/Olha_o_sapo/CMakeFiles/Olha_o_sapo.dir/build
-.PHONY : Olha_o_sapo/fast
-
-#=============================================================================
-# Target rules for targets named viewer4
-
-# Build rule for target.
-viewer4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 viewer4
-.PHONY : viewer4
-
-# fast build rule for target.
-viewer4/fast:
-	$(MAKE) $(MAKESILENT) -f examples/viewer4/CMakeFiles/viewer4.dir/build.make examples/viewer4/CMakeFiles/viewer4.dir/build
-.PHONY : viewer4/fast
+Olha_o_sapo_v2/fast:
+	$(MAKE) $(MAKESILENT) -f examples/Olha_o_sapo_v2/CMakeFiles/Olha_o_sapo_v2.dir/build.make examples/Olha_o_sapo_v2/CMakeFiles/Olha_o_sapo_v2.dir/build
+.PHONY : Olha_o_sapo_v2/fast
 
 # Help Target
 help:
@@ -189,11 +176,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Olha_o_sapo"
+	@echo "... Olha_o_sapo_v2"
 	@echo "... abcg"
 	@echo "... fmt"
 	@echo "... imgui"
-	@echo "... viewer4"
 .PHONY : help
 
 

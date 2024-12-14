@@ -279,13 +279,13 @@ OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenGL.so
 OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 
 //Value Computed by CMake
-Olha_o_sapo_BINARY_DIR:STATIC=/home/yury47/CG_ATV3/build/examples/Olha_o_sapo
+Olha_o_sapo_v2_BINARY_DIR:STATIC=/home/yury47/CG_ATV3/build/examples/Olha_o_sapo_v2
 
 //Value Computed by CMake
-Olha_o_sapo_IS_TOP_LEVEL:STATIC=OFF
+Olha_o_sapo_v2_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-Olha_o_sapo_SOURCE_DIR:STATIC=/home/yury47/CG_ATV3/examples/Olha_o_sapo
+Olha_o_sapo_v2_SOURCE_DIR:STATIC=/home/yury47/CG_ATV3/examples/Olha_o_sapo_v2
 
 //Path to a library.
 SDL2MAIN_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libSDL2main.a
@@ -370,15 +370,6 @@ tiny_obj_loader_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 tiny_obj_loader_SOURCE_DIR:STATIC=/home/yury47/CG_ATV3/abcg/external/tiny_obj_loader
-
-//Value Computed by CMake
-viewer4_BINARY_DIR:STATIC=/home/yury47/CG_ATV3/build/examples/viewer4
-
-//Value Computed by CMake
-viewer4_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-viewer4_SOURCE_DIR:STATIC=/home/yury47/CG_ATV3/examples/viewer4
 
 
 ########################
@@ -489,7 +480,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

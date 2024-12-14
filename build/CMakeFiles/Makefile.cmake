@@ -26,8 +26,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../cmake/Sanitizers.cmake"
   "../cmake/Warnings.cmake"
   "../examples/CMakeLists.txt"
-  "../examples/Olha_o_sapo/CMakeLists.txt"
-  "../examples/viewer4/CMakeLists.txt"
+  "../examples/Olha_o_sapo_v2/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
@@ -151,8 +150,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "abcg/external/glm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "abcg/external/gsl/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "examples/Olha_o_sapo/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "examples/viewer4/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/Olha_o_sapo_v2/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -160,6 +158,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "abcg/CMakeFiles/abcg.dir/DependInfo.cmake"
   "abcg/external/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   "abcg/external/fmt/CMakeFiles/fmt.dir/DependInfo.cmake"
-  "examples/Olha_o_sapo/CMakeFiles/Olha_o_sapo.dir/DependInfo.cmake"
-  "examples/viewer4/CMakeFiles/viewer4.dir/DependInfo.cmake"
+  "examples/Olha_o_sapo_v2/CMakeFiles/Olha_o_sapo_v2.dir/DependInfo.cmake"
   )
