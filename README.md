@@ -50,7 +50,7 @@ A aplicação utiliza o modelo de iluminação Blinn-Phong, que é uma extensão
 O modelo Blinn-Phong combina três componentes principais para calcular a cor final de cada fragmento:
 - Iluminação Ambiente (Ambient): Representa luz difusa presente em todos os pontos da cena, independentemente da posição da luz ou orientação do objeto.
 - Iluminação Difusa (Diffuse): Representa a luz refletida em todas as direções a partir de uma superfície, proporcional ao ângulo de incidência entre a luz e a superfície.
-- Iluminação Especular (Specular): Representa os reflexos brilhantes que aparecem nas superfícies, calculados com base no ângulo entre o vetor de visão e o vetor de reflexão.\
+- Iluminação Especular (Specular): Representa os reflexos brilhantes que aparecem nas superfícies, calculados com base no ângulo entre o vetor de visão e o vetor de reflexão.
 \
 A iluminação é ajustada por três constantes (Ka, Kd, Ks), representando as componentes ambiente, difusa e especular do material, além do parâmetro `shininess`, que define o tamanho e intensidade do brilho especular.
 
