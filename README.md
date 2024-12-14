@@ -113,7 +113,7 @@ Este projeto demonstrou o potencial das técnicas de computação gráfica moder
 # Anexo/Arquivos
 A renderização gráfica do aplicativo é realizada utilizando OpenGL, uma das principais bibliotecas para gráficos 3D em tempo real, que garante alto desempenho e flexibilidade. Para simplificar a integração com SDL e ImGui, foi utilizada a biblioteca abcgOpenGL, que facilita a manipulação de eventos de entrada e a criação de interfaces gráficas. Isso permite uma experiência interativa fluida e responsiva para o usuário, com controles intuitivos para manipulação do modelo 3D e alteração das cores.
 
-Consulte a pasta **Olha_o_sapo** deste repositório para obter os arquivos do projeto.
+As descrições abaixo fornecem um resumo técnico das funcionalidades implementadas em cada arquivo. Consulte a pasta **Olha_o_sapo2** deste repositório para obter os arquivos do projeto.
 O programa é baseado nos seguintes arquivos:
 
 **main.cpp**\
