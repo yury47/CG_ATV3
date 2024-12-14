@@ -10,30 +10,25 @@ O objetivo principal do aplicativo é permitir que o usuário explore e modifiqu
 A ideia por trás da concepção deste aplicativo é a criação de um catálogo de espécies que poderia ser utilizado em um contexto educacional, especialmente em aulas de biologia ou alguma disciplina que demande um detalhamento mais profundo de características de espécimes. O aplicativo permite que diferentes modelos de animais ou plantas sejam visualizados em 3D, que podem ser alternados dinamicamente, possibilitando uma análise detalhada das características desses organismos. A capacidade de modificar propriedades do modelo também pode ser útil para destacar características específicas, como diferentes partes do corpo ou variabilidade genética, proporcionando uma experiência de aprendizagem interativa e visual em tempo real.
 
 # Funcionalidades Principais
-Permite a aplicação de texturas personalizadas (“mapeamento de imagem”) aos modelos, carregadas a partir de arquivos no formato .jpg ou .png. O controle de iluminação possibilita o ajuste das propriedades de intensidade da luz ambiental (Ia), difusa (Id) e especular (Is). As propriedades dos materiais são feitas através do ajuste dinâmico das propriedades ka (reflexão ambiental), kd (reflexão difusa) e ks (reflexão especular) de cada modelo. Controle do expoente especular, que define o espalhamento do brilho especular. A implementação do um modelo de iluminação foi baseada no modelo de Blinn-Phong, com controles detalhados sobre os componentes especulares e difusos. Proporciona interatividade avançada permitindo ao usuário rotacionar os modelos em todas as direções utilizando uma interface TrackBall e fazer o ajuste dinâmico das cores baseadas na intensidade dos valores RGB. Além disso permite alternância entre objetos, permitindo alternar entre eles para comparações e explorações visuais.
+Permite a aplicação de texturas personalizadas (“mapeamento de imagem”) aos modelos, carregadas a partir de arquivos no formato .jpg ou .png. O controle de iluminação possibilita o ajuste das propriedades de intensidade da luz ambiental (Ia), difusa (Id) e especular (Is). As propriedades dos materiais são feitas através do ajuste dinâmico das propriedades ka (reflexão ambiental), kd (reflexão difusa) e ks (reflexão especular) de cada modelo. Controle do expoente especular, que define o espalhamento do brilho especular. A implementação do um modelo de iluminação foi baseada no modelo de Blinn-Phong, com controles detalhados sobre os componentes especulares e difusos. Proporciona interatividade avançada permitindo ao usuário rotacionar os modelos em todas as direções utilizando uma interface TrackBall, que permite ao usuário arrastar o mouse sobre a tela para girar o objeto nas direções desejadas, e fazer o ajuste dinâmico das propriedades baseadas na intensidade dos valores RGB. Além disso permite alternância entre objetos, permitindo alternar entre eles para comparações e explorações visuais.
 
 ## Guia de Utilização
 A interação com o aplicativo é simples e intuitiva, permitindo uma experiência fluida para usuários de todos os níveis. 
 
 # Ajuste de Propriedades de Materiais e Luzes
 
-É possível alterar os valores dos componentes RGB das constantes ka, kd, ks, Ia, Id e Is. Os ajustes podem ser feitos por meio de uma paleta de cores, clicando no quadrado de cor ao lado da constante que se deseja alterar, ou alterando diretamente os valores de cada componente RGB individualmenteo que pode ser feito de duas formas; clicando em cima da componente que se deseja alterar a arrastando o mouse para a direita ou esquerda, ou clicando duas vezes sobre a componente e digitar um valor específico.   
+É possível alterar os valores dos componentes RGB das constantes ka, kd, ks, Ia, Id e Is. Os ajustes podem ser feitos por meio de uma paleta de cores, clicando no quadrado de cor ao lado da constante que se deseja alterar, ou alterando diretamente os valores de cada componente RGB individualmenteo que pode ser feito de duas formas; clicando em cima da componente que se deseja alterar a arrastando o mouse para a direita ou esquerda, ou clicando duas vezes sobre a componente e digitar um valor específico. 
 
-### Interações
-Rotação do Objeto
-O objeto 3D pode ser rotacionado em todas as direções utilizando o mouse. Isso é possível devido ao uso do Trackball, que permite ao usuário arrastar o mouse sobre a tela para girar o objeto nas direções desejadas. A rotação é suave e precisa, proporcionando uma experiência de visualização imersiva.
+## Constante de Espalhamento Especular:
+A constante que define o espalhamento do brilho especular pode ser aumentada ou diminuída diretamente pelo usuário.   
 
-### Alteração das Cores do Objeto
-O aplicativo oferece controles de cores através de botões. Esses botões ajustam as componentes de cor RGB (vermelho, verde e azul) do objeto, permitindo que o usuário personalize as cores da maneira desejada. Os botões disponíveis são:
+## Rotação do Modelo e do Ponto de Luz
+O objeto 3D pode ser rotacionado em todas as direções utilizando o mouse. Use o botão esquerdo do mouse para rotacionar o modelo em qualquer direção. A rotação é suave e precisa, proporcionando uma experiência de visualização imersiva. O ponto de iluminação também pode ser alterado usando o botão direito do mouse para ajustar a posição da luz em relação ao modelo.
 
-- +red: Aumenta a intensidade da cor vermelha no objeto.
-- -red: Diminui a intensidade da cor vermelha no objeto.
-- +green: Aumenta a intensidade da cor verde no objeto.
-- -green: Diminui a intensidade da cor verde no objeto.
-- +blue: Aumenta a intensidade da cor azul no objeto.
-- -blue: Diminui a intensidade da cor azul no objeto.
+## Alteração entre Objetos
+Utilize o botão “Load 3D Model” para carregar diferentes arquivos .obj, que correspondem a diferentes espécies que se deseja estudar durante a execução do aplicativo.
 
-Cada botão afeta a componente de cor correspondente, permitindo ao usuário fazer ajustes em tempo real e ver o impacto imediatamente na renderização do objeto. O valor de cada componente de cor varia de 0 a 1, onde 0 significa nenhuma intensidade e 1 representa a intensidade máxima da cor.
+Essas funcionalidades permitem explorar e manipular os modelos e suas características de forma interativa e visualmente rica.
 
 ## Vídeo de demonstração
 
