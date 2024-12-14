@@ -4,15 +4,15 @@
 - Karl Eloy Marques Henrique
 
 
-## Introdução
+# Introdução
 O objetivo principal do aplicativo é permitir que o usuário explore e modifique um objeto 3D de forma interativa. O controle da rotação e iluminação do objeto oferece uma visualização completa de suas características intrínsecas, enquanto o controle das propriedades da luz e do material, permite ao usuário ajustar a aparência estética do objeto de acordo com suas preferências.
 
 A ideia por trás da concepção deste aplicativo é a criação de um catálogo de espécies que poderia ser utilizado em um contexto educacional, especialmente em aulas de biologia ou alguma disciplina que demande um detalhamento mais profundo de características de espécimes. O aplicativo permite que diferentes modelos de animais ou plantas sejam visualizados em 3D, que podem ser alternados dinamicamente, possibilitando uma análise detalhada das características desses organismos. A capacidade de modificar propriedades do modelo também pode ser útil para destacar características específicas, como diferentes partes do corpo ou variabilidade genética, proporcionando uma experiência de aprendizagem interativa e visual em tempo real.
 
-# Funcionalidades Principais
+## Funcionalidades Principais
 Permite a aplicação de texturas personalizadas (“mapeamento de imagem”) aos modelos, carregadas a partir de arquivos no formato .jpg ou .png. O controle de iluminação possibilita o ajuste das propriedades de intensidade da luz ambiental (Ia), difusa (Id) e especular (Is). As propriedades dos materiais são feitas através do ajuste dinâmico das propriedades ka (reflexão ambiental), kd (reflexão difusa) e ks (reflexão especular) de cada modelo. Controle do expoente especular, que define o espalhamento do brilho especular. A implementação do um modelo de iluminação foi baseada no modelo de Blinn-Phong, com controles detalhados sobre os componentes especulares e difusos. Proporciona interatividade avançada permitindo ao usuário rotacionar os modelos em todas as direções utilizando uma interface TrackBall, que permite ao usuário arrastar o mouse sobre a tela para girar o objeto nas direções desejadas, e fazer o ajuste dinâmico das propriedades baseadas na intensidade dos valores RGB. Além disso permite alternância entre objetos, permitindo alternar entre eles para comparações e explorações visuais.
 
-## Guia de Utilização
+# Guia de Utilização
 A interação com o aplicativo é simples e intuitiva, permitindo uma experiência fluida para usuários de todos os níveis. 
 
 ## Ajuste de Propriedades de Materiais e Luzes
@@ -30,11 +30,11 @@ Utilize o botão “Load 3D Model” para carregar diferentes arquivos .obj, que
 
 Essas funcionalidades permitem explorar e manipular os modelos e suas características de forma interativa e visualmente rica.
 
-## Vídeo de demonstração
+# Vídeo de demonstração
 
 Para ver o jogo funcionando, [clique aqui](https://drive.google.com/file/d/1OGZeqfUua4DHcL3dYxXEdSG1qNi08lK4/view?usp=drive_link).
 
-## Arquivos
+# Arquivos
 
 A renderização gráfica do aplicativo é realizada utilizando OpenGL, uma das principais bibliotecas para gráficos 3D em tempo real, que garante alto desempenho e flexibilidade. Para simplificar a integração com SDL e ImGui, foi utilizada a biblioteca abcgOpenGL, que facilita a manipulação de eventos de entrada e a criação de interfaces gráficas. Isso permite uma experiência interativa fluida e responsiva para o usuário, com controles intuitivos para manipulação do modelo 3D e alteração das cores.
 
