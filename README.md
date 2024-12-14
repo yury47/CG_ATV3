@@ -34,21 +34,22 @@ O projeto foi desenvolvido com foco em atender aos requisitos da atividade, como
 ## Uso de Gráficos 3D com Primitivas do OpenGL
 A renderização dos modelos 3D é feita utilizando primitivas do OpenGL, com suporte a mapeamento de texturas e aplicação de iluminação. Para carregar uma textura no OpenGL, primeiro chamamos a função `glGenTextures`, que cria um ou mais recursos de textura. Em seguida, ligamos o recurso de textura a um “alvo de textura”, como `GL_TEXTURE_2D` para texturas 2D. A textura é então preenchida com um mapa de bits por meio da função `glTexImage2D`. A função considera que cada pixel é uma tupla de valores RGBA (GL_RGBA), e que cada componente de cor é um byte sem sinal (`GL_UNSIGNED_BYTE`). No contexto da biblioteca ABCg, utilizamos a função auxiliar `abcg::loadOpenGLTexture`, que simplifica o processo de carregamento de texturas. Essa função recebe uma estrutura `abcg::OpenGLTextureCreateInfo` com informações sobre o arquivo de imagem.
 
-Interação:
-
+## Interação
 A interação do usuário é garantida por meio do mouse, permitindo rotacionar modelos e ajustar a iluminação.
 
-Animação:
-
+## Animação
 Implementada por meio da rotação contínua de modelos com base na interação do usuário via TrackBall.
 
-Iluminação:
-
+## Iluminação
 Baseada no modelo de iluminação Phong, permite controle preciso sobre a intensidade e reflexão de luz nos modelos.
 
-Texturização:
+## Texturização
 Suporte ao carregamento de texturas externas e aplicação nos modelos por mapeamento UV. Um arquivo OBJ pode vir acompanhado de um arquivo .mtl opcional que contém a descrição das propriedades dos materiais de cada objeto. Ele inclui valores como o expoente especular (Ns), propriedades de reflexão ambiente (Ka), difusa (Kd) e especular (Ks), além do nome do mapa de textura que deve ser utilizado (e.g., map_Kd). Nossa implementação de `Model::loadObj`, que utiliza funções da biblioteca **TinyObjLoader**, carrega automaticamente a textura difusa, se ela existir. No método `Model::render`, chamado em `Window::onPaint`, a ativação da textura no pipeline de renderização é realizada. Após a ativação da unidade de textura, a função `glBindTexture` é chamada para associar o identificador de textura à unidade recém ativada.
 
+## Problemas e Soluções Encontradas
+Algumas texturas não ficaram alinhadas corretamente, apresentando distorção devido a problemas no mapeamento UV. Como solução, ajustamos os algoritmos de carregamento para garantir que as coordenadas UV fossem corretamente interpretadas do arquivo OBJ.
+Outro problema ocorreu quando objetos foram carregados sem a textura correta. Durante a inicialização, alguns modelos carregados apareciam sem a textura associada, mesmo com o arquivo .mtl disponível. Para corrigir alteramos a implementação de `Model::loadObj` para validar se a textura estava carregada corretamente antes de ativar o pipeline de renderização. Também adicionamos verificações para recarregar texturas ausentes dinamicamente.
+Além disso foi necessário ajuste do posicionamento inicial pois os modelos carregados não estavam bem posicionados na janela, dificultando a visualização inicial. Foi necessário o ajuste de coordenadas para garantir que todos os objetos carregados ficassem melhor posicionados.
 
 # Vídeo de demonstração
 
