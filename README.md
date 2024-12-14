@@ -72,28 +72,32 @@ Além disso foi necessário ajuste do posicionamento inicial pois os modelos car
 O desempenho computacional da aplicação foi avaliado considerando a eficiência dos cálculos de iluminação, renderização de múltiplos objetos com texturas, e a manipulação interativa em tempo real. Alguns aspectos notáveis incluem:
 
 - Eficiência dos Shaders:
+  O uso do modelo de Blinn-Phong, implementado nos shaders, demonstrou um bom equilíbrio entre qualidade visual e custo computacional. A utilização do vetor de meio (H) para o cálculo da iluminação      especular resultou em uma redução significativa do número de operações matemáticas, sem sacrificar a qualidade visual.
 
-  O uso do modelo de Blinn-Phong, implementado nos shaders, demonstrou um bom equilíbrio entre qualidade visual e custo computacional. A utilização do vetor de meio (H) para o cálculo da iluminação      especular resultou em uma redução significativa do número de operações matemáticas, sem sacrificar a qualidade visual. Gerenciamento de Recursos Gráficos:
+- Gerenciamento de Recursos Gráficos:
+  A aplicação lida de forma eficiente com texturas e iluminação, mantendo um bom desempenho. O impacto computacional do cálculo dos vetores normais e das transformações de iluminação foi minimizado com o uso de buffers otimizados.
 
-A aplicação lida de forma eficiente com texturas e iluminação, mantendo um bom desempenho mesmo ao renderizar múltiplos objetos simultaneamente.
-O impacto computacional do cálculo dos vetores normais e das transformações de iluminação foi minimizado com o uso de buffers otimizados.
-Taxa de Quadros (FPS):
+## Análise do Resultado Gráfico e Visual
 
-Durante os testes em sistemas equipados com uma NVIDIA RTX 3070, a aplicação manteve uma taxa de quadros estável acima de 60 FPS, mesmo em cenas complexas com múltiplas fontes de luz e objetos texturizados.
-Em hardwares menos robustos, a aplicação se manteve funcional com desempenho aceitável ao reduzir a resolução das texturas ou simplificar os modelos.
-Análise do Resultado Gráfico e Visual
-Qualidade Visual:
+- Qualidade Visual:
+  O modelo de iluminação Blinn-Phong proporcionou resultados gráficos realistas, com reflexos especulares bem definidos e um controle preciso da difusão da luz nas superfícies. A possibilidade de ajustar os parâmetros de iluminação, como ka, kd, ks e o expoente especular (shininess), oferece flexibilidade para personalizar o visual dos objetos.
+  
+- Adição de Texturas:
+  A inclusão de texturas aprimorou a percepção visual dos modelos, permitindo maior detalhamento das superfícies. Os mapeamentos de textura foram aplicados com precisão, garantindo ausência de distorções visíveis, mesmo durante rotações ou mudanças de perspectiva.
+  
+- Iluminação Dinâmica:
+  O controle interativo da intensidade das componentes de luz ambiente (Ia), difusa (Id) e especular (Is) possibilitou uma análise visual em tempo real dos efeitos de iluminação. As transições entre diferentes configurações de luz foram suaves, demonstrando a robustez dos cálculos implementados nos shaders.
 
-O modelo de iluminação Blinn-Phong proporcionou resultados gráficos realistas, com reflexos especulares bem definidos e um controle preciso da difusão da luz nas superfícies.
-A possibilidade de ajustar os parâmetros de iluminação, como ka, kd, ks e o expoente especular (shininess), oferece flexibilidade para personalizar o visual dos objetos.
-Adição de Texturas:
+## Interatividade da Aplicação
 
-A inclusão de texturas aprimorou a percepção visual dos modelos, permitindo maior detalhamento das superfícies.
-Os mapeamentos de textura foram aplicados com precisão, garantindo ausência de distorções visíveis, mesmo durante rotações ou mudanças de perspectiva.
-Iluminação Dinâmica:
-
-O controle interativo da intensidade das componentes de luz ambiente (Ia), difusa (Id) e especular (Is) possibilitou uma análise visual em tempo real dos efeitos de iluminação.
-As transições entre diferentes configurações de luz foram suaves, demonstrando a robustez dos cálculos implementados nos shaders.
+- Manipulação de Objetos em 3D:
+  A implementação da classe TrackBall permitiu uma manipulação fluida e intuitiva dos modelos, com rotações precisas em todas as direções. A resposta dos controles foi imediata e livre de atrasos perceptíveis, mesmo em sistemas com menor desempenho.
+  
+- Controle de Cores e Iluminação:
+  O ajuste interativo dos valores de RGB para as cores dos modelos foi intuitivo, permitindo ao usuário experimentar combinações visuais de forma rápida e eficiente. A interação com os parâmetros de iluminação ofereceu uma experiência prática para explorar diferentes configurações de luz e analisar seu impacto gráfico.
+  
+- Seleção e Troca de Objetos:
+   A funcionalidade de alternar entre múltiplos objetos se mostrou eficiente, sem interrupções ou queda de desempenho. Cada objeto manteve suas propriedades individuais de textura e iluminação, garantindo uma experiência rica e consistente.
 
 # Arquivos
 A renderização gráfica do aplicativo é realizada utilizando OpenGL, uma das principais bibliotecas para gráficos 3D em tempo real, que garante alto desempenho e flexibilidade. Para simplificar a integração com SDL e ImGui, foi utilizada a biblioteca abcgOpenGL, que facilita a manipulação de eventos de entrada e a criação de interfaces gráficas. Isso permite uma experiência interativa fluida e responsiva para o usuário, com controles intuitivos para manipulação do modelo 3D e alteração das cores.
