@@ -195,3 +195,30 @@ Saídas (out):
 - fragV: Vetor do fragmento para a câmera, no espaço da câmera.
 - fragL: Vetor direção da luz, no espaço da câmera.
 - fragN: Vetor normal da superfície, corrigido e transformado para o espaço da câmera.
+
+Transforma as coordenadas dos vértices para o espaço da câmera, ajusta o vetor normal do espaço do modelo para o espaço da câmerae e então a luz é transformada para o espaço da câmera, com o vetor invertido para representar a direção que ela "atinge" o objeto.
+
+A lógica da main calcula as transformações para posição, normais e luz. Define as variáveis de saída (fragV, fragL, fragN) que serão interpoladas para os fragmentos. Calcula a posição final do vértice no espaço de tela.
+
+**texture.frag**\
+Este é o shader de fragmento, responsável por calcular a cor de cada fragmento da malha 3D considerando as propriedades do material, a iluminação e o mapeamento de textura. O shader implementa o modelo de reflexão de Blinn-Phong e suporta diferentes modos de mapeamento de textura (triplanar, cilíndrico, esférico e coordenadas diretas da malha).
+
+Suas principais componentes são:
+
+Entradas (variáveis interpoladas):
+
+- fragN, fragL, fragV: Normais, direção da luz e direção do observador no espaço de fragmentos.
+- fragTexCoord: Coordenadas de textura fornecidas pela malha.
+- fragPObj, fragNObj: Posição e normais no espaço do objeto, usadas para cálculo de mapeamento alternativo.
+
+Uniformes (propriedades configuráveis):
+
+- Ia, Id, Is: Intensidades da luz ambiente, difusa e especular.
+- Ka, Kd, Ks: Coeficientes de material para luz ambiente, difusa e especular.
+- shininess: Expoente especular para controle de brilho.
+- diffuseTex: Textura difusa (amostrada via sampler2D).
+- mappingMode: Define o modo de mapeamento de textura:
+   - 0: Triplanar.
+   - 1: Cilíndrico.
+   - 2: Esférico.
+   - 3: Coordenadas diretas da malha.
