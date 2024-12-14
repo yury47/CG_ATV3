@@ -55,6 +55,13 @@ Além disso foi necessário ajuste do posicionamento inicial pois os modelos car
 
 Para ver o aplicativo funcionando, [clique aqui](https://drive.google.com/file/d/1OGZeqfUua4DHcL3dYxXEdSG1qNi08lK4/view?usp=drive_link).
 
+## Rodando em WebAssembly
+Os binários WebAssembly foram compilados e estão disponíveis na pasta **public** deste repositório. 
+
+Criamos um site do **GitHub Pages** para permitir o acesso direto ao aplicativo.
+
+Basta entrar no link [Olha_o_sapo](https://karleloy.github.io/Atividade2CG-Olha_o_sapo/public/Olha_o_sapo.html).
+
 # Arquivos
 
 A renderização gráfica do aplicativo é realizada utilizando OpenGL, uma das principais bibliotecas para gráficos 3D em tempo real, que garante alto desempenho e flexibilidade. Para simplificar a integração com SDL e ImGui, foi utilizada a biblioteca abcgOpenGL, que facilita a manipulação de eventos de entrada e a criação de interfaces gráficas. Isso permite uma experiência interativa fluida e responsiva para o usuário, com controles intuitivos para manipulação do modelo 3D e alteração das cores.
@@ -102,10 +109,3 @@ Este arquivo define o Vertex Shader da aplicação, responsável por transformar
 - Em `gl_Position = projMatrix * posEyeSpace;` a posição do vértice é transformada para o espaço de projeção, preparando o vértice para a renderização na tela.
 
 Este shader aplica um efeito de escurecimento baseado na profundidade. Vértices mais próximos da câmera têm uma cor mais clara, enquanto vértices mais distantes tornam-se progressivamente mais escuros.
-
-## Rodando em WebAssembly
-Os binários WebAssembly foram compilados e estão disponíveis na pasta **public** deste repositório. 
-
-Criamos um site do **GitHub Pages** para permitir o acesso direto ao aplicativo.
-
-Basta entrar no link [Olha_o_sapo](https://karleloy.github.io/Atividade2CG-Olha_o_sapo/public/Olha_o_sapo.html).
