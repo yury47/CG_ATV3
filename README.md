@@ -15,7 +15,7 @@ Permite a aplicação de texturas personalizadas (“mapeamento de imagem”) ao
 ## Guia de Utilização
 A interação com o aplicativo é simples e intuitiva, permitindo uma experiência fluida para usuários de todos os níveis. 
 
-# Ajuste de Propriedades de Materiais e Luzes
+## Ajuste de Propriedades de Materiais e Luzes
 
 É possível alterar os valores dos componentes RGB das constantes ka, kd, ks, Ia, Id e Is. Os ajustes podem ser feitos por meio de uma paleta de cores, clicando no quadrado de cor ao lado da constante que se deseja alterar, ou alterando diretamente os valores de cada componente RGB individualmenteo que pode ser feito de duas formas; clicando em cima da componente que se deseja alterar a arrastando o mouse para a direita ou esquerda, ou clicando duas vezes sobre a componente e digitar um valor específico. 
 
