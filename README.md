@@ -257,3 +257,7 @@ Saídas (para o shader de fragmento):
 - `fragN`, `fragL`, `fragV`: Normais, direção da luz e direção do observador interpoladas no espaço do fragmento.
 
 Este shader prepara os dados necessários para o shader de fragmento, incluindo a geometria da malha, as normais e as coordenadas de textura, além de aplicar as transformações necessárias para exibição correta na tela.
+
+# Referências
+
+[Site da disciplina Computação Gráfica](https://hbatagelo.github.io/cg/)
