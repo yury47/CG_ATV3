@@ -173,4 +173,25 @@ As propriedades de material e luz são dadas por:
 Sua saída (`out`) possui:
 - outColor: Cor final do fragmento renderizado.
 
-Ao final a função BlinnPhong realiza os cálculos de iluminação em três etapas.
+Ao final a função BlinnPhong realiza os cálculos de iluminação em três etapas. A lógica da main combina as componentes ambiente, difusa e especular para calcular a cor final: `outColor = ambientColor + diffuseColor + specularColor`.
+
+**blinnphong.vert**\
+Este arquivo é o vertex shader, responsável por transformar as posições dos vértices e calcular os vetores necessários para o modelo de iluminação.
+
+Tem como entradas (`in`):
+- inPosition: Coordenadas dos vértices do modelo.
+- inNormal: Vetores normais associados aos vértices, utilizados para os cálculos de iluminação.
+
+Uniforms (Matrizes e Luz):
+
+- modelMatrix: Matriz de transformação do modelo no espaço mundial.
+- viewMatrix: Matriz de visão para converter as coordenadas para o espaço da câmera.
+- projMatrix: Matriz de projeção para transformar coordenadas para o espaço de tela.
+- normalMatrix: Matriz usada para corrigir a transformação das normais no espaço da câmera.
+- lightDirWorldSpace: Direção da luz no espaço mundial.
+
+Saídas (out):
+
+- fragV: Vetor do fragmento para a câmera, no espaço da câmera.
+- fragL: Vetor direção da luz, no espaço da câmera.
+- fragN: Vetor normal da superfície, corrigido e transformado para o espaço da câmera.
