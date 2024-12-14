@@ -1,8 +1,8 @@
 abcg/external/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui/imgui_demo.cpp \
+ /home/yury47/CG_ATV3/abcg/external/imgui/imgui_demo.cpp \
  /usr/include/stdc-predef.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui/imgui.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui/imconfig.h \
+ /home/yury47/CG_ATV3/abcg/external/imgui/imgui.h \
+ /home/yury47/CG_ATV3/abcg/external/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/string.h \

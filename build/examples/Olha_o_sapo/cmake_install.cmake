@@ -1,4 +1,4 @@
-# Install script for directory: /home/yury47/Atividade2CG-Olha_o_sapo/examples/Olha_o_sapo
+# Install script for directory: /home/yury47/CG_ATV3/examples/Olha_o_sapo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

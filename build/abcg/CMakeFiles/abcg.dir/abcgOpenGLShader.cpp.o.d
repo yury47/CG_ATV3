@@ -1,9 +1,9 @@
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLShader.cpp \
+ /home/yury47/CG_ATV3/abcg/abcgOpenGLShader.cpp \
  /usr/include/stdc-predef.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLShader.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLExternal.hpp \
- /usr/include/GL/glew.h /usr/include/c++/11/cstddef \
+ /home/yury47/CG_ATV3/abcg/abcgOpenGLShader.hpp \
+ /home/yury47/CG_ATV3/abcg/abcgOpenGLExternal.hpp /usr/include/GL/glew.h \
+ /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -25,8 +25,7 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/GL/glu.h \
- /usr/include/GL/gl.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgShader.hpp \
+ /usr/include/GL/gl.h /home/yury47/CG_ATV3/abcg/abcgShader.hpp \
  /usr/include/c++/11/optional /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
@@ -157,9 +156,9 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/itertools.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/accumulate.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/itertools.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/accumulate.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/functional /usr/include/c++/11/tuple \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
@@ -173,7 +172,7 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/variant \
  /usr/include/c++/11/bits/parse_numbers.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/internal/iterbase.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/internal/iterbase.hpp \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/c++/11/bits/streambuf_iterator.h \
  /usr/include/c++/11/streambuf /usr/include/c++/11/bits/ios_base.h \
@@ -182,9 +181,9 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: \
  /usr/include/c++/11/system_error \
  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/streambuf.tcc \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/internal/iterbase.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/batched.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/internal/iteratoriterator.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/internal/iterbase.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/batched.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/internal/iteratoriterator.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/ranges_algo.h \
  /usr/include/c++/11/bits/ranges_algobase.h \
  /usr/include/c++/11/bits/ranges_util.h \
@@ -234,56 +233,56 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: \
  /usr/include/c++/11/bits/ranges_uninitialized.h \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/chain.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/internal/iter_tuples.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/chunked.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/combinations.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/combinations_with_replacement.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/compress.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/count.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/range.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/chain.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/internal/iter_tuples.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/internal/iterator_wrapper.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/chunked.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/combinations.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/combinations_with_replacement.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/compress.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/count.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/range.hpp \
  /usr/include/c++/11/limits \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/cycle.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/dropwhile.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/filter.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/enumerate.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/filterfalse.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/groupby.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/imap.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/starmap.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/zip.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/permutations.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/powerset.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/product.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/repeat.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/reversed.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/slice.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/sliding_window.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/cycle.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/dropwhile.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/filter.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/enumerate.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/filterfalse.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/groupby.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/imap.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/starmap.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/zip.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/permutations.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/powerset.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/product.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/repeat.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/reversed.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/slice.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/sliding_window.hpp \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/sorted.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/takewhile.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/unique_everseen.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/sorted.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/takewhile.hpp \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/unique_everseen.hpp \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/cppitertools/unique_justseen.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/fmt/core.h \
+ /home/yury47/CG_ATV3/abcg/external/cppitertools/unique_justseen.hpp \
+ /home/yury47/CG_ATV3/abcg/external/fmt/core.h \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/gsl/gsl \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/gsl/gsl_algorithm \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/gsl/gsl_assert \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/gsl/span \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/gsl/gsl_byte \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/gsl/gsl_util \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/gsl/multi_span \
+ /home/yury47/CG_ATV3/abcg/external/gsl/gsl \
+ /home/yury47/CG_ATV3/abcg/external/gsl/gsl_algorithm \
+ /home/yury47/CG_ATV3/abcg/external/gsl/gsl_assert \
+ /home/yury47/CG_ATV3/abcg/external/gsl/span \
+ /home/yury47/CG_ATV3/abcg/external/gsl/gsl_byte \
+ /home/yury47/CG_ATV3/abcg/external/gsl/gsl_util \
+ /home/yury47/CG_ATV3/abcg/external/gsl/multi_span \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/gsl/pointers \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/gsl/string_span \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/gsl/span_ext \
+ /home/yury47/CG_ATV3/abcg/external/gsl/pointers \
+ /home/yury47/CG_ATV3/abcg/external/gsl/string_span \
+ /home/yury47/CG_ATV3/abcg/external/gsl/span_ext \
  /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/ctime /usr/include/c++/11/bits/fs_path.h \
@@ -317,4 +316,4 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: \
  /usr/include/c++/11/bits/regex.h /usr/include/c++/11/bits/regex.tcc \
  /usr/include/c++/11/bits/regex_executor.h \
  /usr/include/c++/11/bits/regex_executor.tcc \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgException.hpp
+ /home/yury47/CG_ATV3/abcg/abcgException.hpp

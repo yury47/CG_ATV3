@@ -1,7 +1,6 @@
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.o: \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgException.cpp \
- /usr/include/stdc-predef.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgException.hpp \
+ /home/yury47/CG_ATV3/abcg/abcgException.cpp /usr/include/stdc-predef.h \
+ /home/yury47/CG_ATV3/abcg/abcgException.hpp \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -148,10 +147,10 @@ abcg/CMakeFiles/abcg.dir/abcgException.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgUtil.hpp \
- /usr/include/c++/11/functional /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /home/yury47/CG_ATV3/abcg/abcgUtil.hpp /usr/include/c++/11/functional \
+ /usr/include/c++/11/tuple /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/array \
+ /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map \

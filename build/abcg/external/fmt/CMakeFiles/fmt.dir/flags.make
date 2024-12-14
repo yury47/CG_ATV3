@@ -4,7 +4,7 @@
 # compile CXX with /usr/lib/ccache/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/fmt
+CXX_INCLUDES = -I/home/yury47/CG_ATV3/abcg/external/fmt
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20
 

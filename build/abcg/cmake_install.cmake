@@ -1,4 +1,4 @@
-# Install script for directory: /home/yury47/Atividade2CG-Olha_o_sapo/abcg
+# Install script for directory: /home/yury47/CG_ATV3/abcg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/yury47/Atividade2CG-Olha_o_sapo/build/abcg/external/cmake_install.cmake")
+  include("/home/yury47/CG_ATV3/build/abcg/external/cmake_install.cmake")
 endif()
 

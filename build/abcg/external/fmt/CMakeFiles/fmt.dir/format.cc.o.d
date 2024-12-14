@@ -1,7 +1,7 @@
 abcg/external/fmt/CMakeFiles/fmt.dir/format.cc.o: \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/fmt/format.cc \
+ /home/yury47/CG_ATV3/abcg/external/fmt/format.cc \
  /usr/include/stdc-predef.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/fmt/format-inl.h \
+ /home/yury47/CG_ATV3/abcg/external/fmt/format-inl.h \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -222,7 +222,7 @@ abcg/external/fmt/CMakeFiles/fmt.dir/format.cc.o: \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/fmt/format.h \
+ /home/yury47/CG_ATV3/abcg/external/fmt/format.h \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
@@ -254,5 +254,5 @@ abcg/external/fmt/CMakeFiles/fmt.dir/format.cc.o: \
  /usr/include/c++/11/bits/ranges_uninitialized.h \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/fmt/core.h \
+ /home/yury47/CG_ATV3/abcg/external/fmt/core.h \
  /usr/include/c++/11/cstddef

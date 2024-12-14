@@ -1,4 +1,4 @@
-# Install script for directory: /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui
+# Install script for directory: /home/yury47/CG_ATV3/abcg/external/imgui
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

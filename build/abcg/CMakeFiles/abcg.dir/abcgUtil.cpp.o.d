@@ -1,8 +1,6 @@
 abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o: \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgUtil.cpp \
- /usr/include/stdc-predef.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgUtil.hpp \
- /usr/include/c++/11/functional \
+ /home/yury47/CG_ATV3/abcg/abcgUtil.cpp /usr/include/stdc-predef.h \
+ /home/yury47/CG_ATV3/abcg/abcgUtil.hpp /usr/include/c++/11/functional \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yury47/Atividade2CG-Olha_o_sapo
+CMAKE_SOURCE_DIR = /home/yury47/CG_ATV3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yury47/Atividade2CG-Olha_o_sapo/build
+CMAKE_BINARY_DIR = /home/yury47/CG_ATV3/build
 
 # Include any dependencies generated for this target.
 include abcg/CMakeFiles/abcg.dir/depend.make
@@ -72,170 +72,170 @@ include abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: ../abcg/abcgApplication.cpp
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o -MF CMakeFiles/abcg.dir/abcgApplication.cpp.o.d -o CMakeFiles/abcg.dir/abcgApplication.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgApplication.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.o -MF CMakeFiles/abcg.dir/abcgApplication.cpp.o.d -o CMakeFiles/abcg.dir/abcgApplication.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgApplication.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgApplication.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgApplication.cpp > CMakeFiles/abcg.dir/abcgApplication.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgApplication.cpp > CMakeFiles/abcg.dir/abcgApplication.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgApplication.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgApplication.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgApplication.cpp -o CMakeFiles/abcg.dir/abcgApplication.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgApplication.cpp -o CMakeFiles/abcg.dir/abcgApplication.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o: ../abcg/abcgTimer.cpp
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o -MF CMakeFiles/abcg.dir/abcgTimer.cpp.o.d -o CMakeFiles/abcg.dir/abcgTimer.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgTimer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o -MF CMakeFiles/abcg.dir/abcgTimer.cpp.o.d -o CMakeFiles/abcg.dir/abcgTimer.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgTimer.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgTimer.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgTimer.cpp > CMakeFiles/abcg.dir/abcgTimer.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgTimer.cpp > CMakeFiles/abcg.dir/abcgTimer.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgTimer.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgTimer.cpp -o CMakeFiles/abcg.dir/abcgTimer.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgTimer.cpp -o CMakeFiles/abcg.dir/abcgTimer.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.o: ../abcg/abcgException.cpp
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgException.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgException.cpp.o -MF CMakeFiles/abcg.dir/abcgException.cpp.o.d -o CMakeFiles/abcg.dir/abcgException.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgException.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgException.cpp.o -MF CMakeFiles/abcg.dir/abcgException.cpp.o.d -o CMakeFiles/abcg.dir/abcgException.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgException.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgException.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgException.cpp > CMakeFiles/abcg.dir/abcgException.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgException.cpp > CMakeFiles/abcg.dir/abcgException.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgException.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgException.cpp -o CMakeFiles/abcg.dir/abcgException.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgException.cpp -o CMakeFiles/abcg.dir/abcgException.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: ../abcg/abcgImage.cpp
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o -MF CMakeFiles/abcg.dir/abcgImage.cpp.o.d -o CMakeFiles/abcg.dir/abcgImage.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgImage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgImage.cpp.o -MF CMakeFiles/abcg.dir/abcgImage.cpp.o.d -o CMakeFiles/abcg.dir/abcgImage.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgImage.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgImage.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgImage.cpp > CMakeFiles/abcg.dir/abcgImage.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgImage.cpp > CMakeFiles/abcg.dir/abcgImage.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgImage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgImage.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgImage.cpp -o CMakeFiles/abcg.dir/abcgImage.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgImage.cpp -o CMakeFiles/abcg.dir/abcgImage.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o: ../abcg/abcgTrackball.cpp
 abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o -MF CMakeFiles/abcg.dir/abcgTrackball.cpp.o.d -o CMakeFiles/abcg.dir/abcgTrackball.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgTrackball.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.o -MF CMakeFiles/abcg.dir/abcgTrackball.cpp.o.d -o CMakeFiles/abcg.dir/abcgTrackball.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgTrackball.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgTrackball.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgTrackball.cpp > CMakeFiles/abcg.dir/abcgTrackball.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgTrackball.cpp > CMakeFiles/abcg.dir/abcgTrackball.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgTrackball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgTrackball.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgTrackball.cpp -o CMakeFiles/abcg.dir/abcgTrackball.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgTrackball.cpp -o CMakeFiles/abcg.dir/abcgTrackball.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o: ../abcg/abcgWindow.cpp
 abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o -MF CMakeFiles/abcg.dir/abcgWindow.cpp.o.d -o CMakeFiles/abcg.dir/abcgWindow.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.o -MF CMakeFiles/abcg.dir/abcgWindow.cpp.o.d -o CMakeFiles/abcg.dir/abcgWindow.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgWindow.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgWindow.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgWindow.cpp > CMakeFiles/abcg.dir/abcgWindow.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgWindow.cpp > CMakeFiles/abcg.dir/abcgWindow.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgWindow.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgWindow.cpp -o CMakeFiles/abcg.dir/abcgWindow.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgWindow.cpp -o CMakeFiles/abcg.dir/abcgWindow.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o: ../abcg/abcgUtil.cpp
 abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o -MF CMakeFiles/abcg.dir/abcgUtil.cpp.o.d -o CMakeFiles/abcg.dir/abcgUtil.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgUtil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.o -MF CMakeFiles/abcg.dir/abcgUtil.cpp.o.d -o CMakeFiles/abcg.dir/abcgUtil.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgUtil.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgUtil.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgUtil.cpp > CMakeFiles/abcg.dir/abcgUtil.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgUtil.cpp > CMakeFiles/abcg.dir/abcgUtil.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgUtil.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgUtil.cpp -o CMakeFiles/abcg.dir/abcgUtil.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgUtil.cpp -o CMakeFiles/abcg.dir/abcgUtil.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o: ../abcg/abcgOpenGLError.cpp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLError.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgOpenGLError.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgOpenGLError.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLError.cpp > CMakeFiles/abcg.dir/abcgOpenGLError.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgOpenGLError.cpp > CMakeFiles/abcg.dir/abcgOpenGLError.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLError.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgOpenGLError.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLError.cpp -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgOpenGLError.cpp -o CMakeFiles/abcg.dir/abcgOpenGLError.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: ../abcg/abcgOpenGLFunction.cpp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLFunction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgOpenGLFunction.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLFunction.cpp > CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgOpenGLFunction.cpp > CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLFunction.cpp -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgOpenGLFunction.cpp -o CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: ../abcg/abcgOpenGLImage.cpp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLImage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgOpenGLImage.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLImage.cpp > CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgOpenGLImage.cpp > CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLImage.cpp -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgOpenGLImage.cpp -o CMakeFiles/abcg.dir/abcgOpenGLImage.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: ../abcg/abcgOpenGLShader.cpp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLShader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgOpenGLShader.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLShader.cpp > CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgOpenGLShader.cpp > CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLShader.cpp -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgOpenGLShader.cpp -o CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.s
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o: abcg/CMakeFiles/abcg.dir/flags.make
 abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o: ../abcg/abcgOpenGLWindow.cpp
 abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o: abcg/CMakeFiles/abcg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -c /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o"
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/bin/ccache /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -MF CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o.d -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o -c /home/yury47/CG_ATV3/abcg/abcgOpenGLWindow.cpp
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.i"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLWindow.cpp > CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.i
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yury47/CG_ATV3/abcg/abcgOpenGLWindow.cpp > CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.i
 
 abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.s"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLWindow.cpp -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.s
+	cd /home/yury47/CG_ATV3/build/abcg && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yury47/CG_ATV3/abcg/abcgOpenGLWindow.cpp -o CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.s
 
 # Object files for target abcg
 abcg_OBJECTS = \
@@ -269,19 +269,19 @@ abcg/libabcg.a: abcg/CMakeFiles/abcg.dir/abcgOpenGLShader.cpp.o
 abcg/libabcg.a: abcg/CMakeFiles/abcg.dir/abcgOpenGLWindow.cpp.o
 abcg/libabcg.a: abcg/CMakeFiles/abcg.dir/build.make
 abcg/libabcg.a: abcg/CMakeFiles/abcg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libabcg.a"
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && $(CMAKE_COMMAND) -P CMakeFiles/abcg.dir/cmake_clean_target.cmake
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/abcg.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yury47/CG_ATV3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libabcg.a"
+	cd /home/yury47/CG_ATV3/build/abcg && $(CMAKE_COMMAND) -P CMakeFiles/abcg.dir/cmake_clean_target.cmake
+	cd /home/yury47/CG_ATV3/build/abcg && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/abcg.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 abcg/CMakeFiles/abcg.dir/build: abcg/libabcg.a
 .PHONY : abcg/CMakeFiles/abcg.dir/build
 
 abcg/CMakeFiles/abcg.dir/clean:
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg && $(CMAKE_COMMAND) -P CMakeFiles/abcg.dir/cmake_clean.cmake
+	cd /home/yury47/CG_ATV3/build/abcg && $(CMAKE_COMMAND) -P CMakeFiles/abcg.dir/cmake_clean.cmake
 .PHONY : abcg/CMakeFiles/abcg.dir/clean
 
 abcg/CMakeFiles/abcg.dir/depend:
-	cd /home/yury47/Atividade2CG-Olha_o_sapo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yury47/Atividade2CG-Olha_o_sapo /home/yury47/Atividade2CG-Olha_o_sapo/abcg /home/yury47/Atividade2CG-Olha_o_sapo/build /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg /home/yury47/Atividade2CG-Olha_o_sapo/build/abcg/CMakeFiles/abcg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yury47/CG_ATV3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yury47/CG_ATV3 /home/yury47/CG_ATV3/abcg /home/yury47/CG_ATV3/build /home/yury47/CG_ATV3/build/abcg /home/yury47/CG_ATV3/build/abcg/CMakeFiles/abcg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : abcg/CMakeFiles/abcg.dir/depend
 

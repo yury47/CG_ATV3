@@ -1,4 +1,4 @@
-# Install script for directory: /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external
+# Install script for directory: /home/yury47/CG_ATV3/abcg/external
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,31 +44,31 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/yury47/Atividade2CG-Olha_o_sapo/build/abcg/external/tiny_obj_loader/cmake_install.cmake")
+  include("/home/yury47/CG_ATV3/build/abcg/external/tiny_obj_loader/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/yury47/Atividade2CG-Olha_o_sapo/build/abcg/external/imgui/cmake_install.cmake")
+  include("/home/yury47/CG_ATV3/build/abcg/external/imgui/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/yury47/Atividade2CG-Olha_o_sapo/build/abcg/external/cppitertools/cmake_install.cmake")
+  include("/home/yury47/CG_ATV3/build/abcg/external/cppitertools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/yury47/Atividade2CG-Olha_o_sapo/build/abcg/external/fmt/cmake_install.cmake")
+  include("/home/yury47/CG_ATV3/build/abcg/external/fmt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/yury47/Atividade2CG-Olha_o_sapo/build/abcg/external/glm/cmake_install.cmake")
+  include("/home/yury47/CG_ATV3/build/abcg/external/glm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/yury47/Atividade2CG-Olha_o_sapo/build/abcg/external/gsl/cmake_install.cmake")
+  include("/home/yury47/CG_ATV3/build/abcg/external/gsl/cmake_install.cmake")
 endif()
 

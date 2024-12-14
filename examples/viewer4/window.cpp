@@ -48,7 +48,10 @@ void Window::onCreate() {
   }
 
   // Load default model
-  loadModel(assetsPath + "roman_lamp.obj");
+  //loadModel(assetsPath + "roman_lamp.obj");
+  loadModel(assetsPath + "Frog_v1.obj");
+  m_model.loadDiffuseTexture(assetsPath + "maps/Frog_v1_diff.jpg");
+  
   m_mappingMode = 3; // "From mesh" option
 
   // Initial trackball spin
@@ -61,7 +64,7 @@ void Window::loadModel(std::string_view path) {
 
   m_model.destroy();
 
-  m_model.loadDiffuseTexture(assetsPath + "maps/pattern.png");
+  //m_model.loadDiffuseTexture(assetsPath + "maps/Frog_v1_diff.jpg");
   m_model.loadObj(path);
   m_model.setupVAO(m_programs.at(m_currentProgramIndex));
   m_trianglesToDraw = m_model.getNumTriangles();
@@ -139,6 +142,7 @@ void Window::onUpdate() {
 
 void Window::onPaintUI() {
   abcg::OpenGLWindow::onPaintUI();
+  auto const assetsPath{abcg::Application::getAssetsPath()};
 
   auto const scaledWidth{gsl::narrow_cast<int>(m_viewportSize.x * 0.8f)};
   auto const scaledHeight{gsl::narrow_cast<int>(m_viewportSize.y * 0.8f)};
@@ -356,7 +360,21 @@ void Window::onPaintUI() {
 
   fileDialogModel.Display();
   if (fileDialogModel.HasSelected()) {
-    loadModel(fileDialogModel.GetSelected().string());
+    //loadModel(fileDialogModel.GetSelected().string());
+
+      if(fileDialogModel.GetSelected().string() == (assetsPath + "Frog_v1.obj")){
+        loadModel(fileDialogModel.GetSelected().string());
+        m_model.loadDiffuseTexture(assetsPath + "maps/Frog_v1_diff.jpg");
+      }
+      if(fileDialogModel.GetSelected().string() == (assetsPath + "Frog_v2.obj")){
+        loadModel(fileDialogModel.GetSelected().string());
+        m_model.loadDiffuseTexture(assetsPath + "maps/Frog_v2_diff.jpg");
+      }
+            if(fileDialogModel.GetSelected().string() == (assetsPath + "Frog_v3.obj")){
+        loadModel(fileDialogModel.GetSelected().string());
+        m_model.loadDiffuseTexture(assetsPath + "maps/Frog_v3_diff.jpg");
+      }
+
     fileDialogModel.ClearSelected();
 
     if (m_model.isUVMapped()) {

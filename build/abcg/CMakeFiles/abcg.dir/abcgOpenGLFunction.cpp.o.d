@@ -1,7 +1,7 @@
 abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLFunction.cpp \
+ /home/yury47/CG_ATV3/abcg/abcgOpenGLFunction.cpp \
  /usr/include/stdc-predef.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLFunction.hpp \
+ /home/yury47/CG_ATV3/abcg/abcgOpenGLFunction.hpp \
  /usr/include/c++/11/string_view /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -68,11 +68,10 @@ abcg/CMakeFiles/abcg.dir/abcgOpenGLFunction.cpp.o: \
  /usr/include/c++/11/bits/ranges_base.h \
  /usr/include/c++/11/bits/max_size_type.h /usr/include/c++/11/numbers \
  /usr/include/c++/11/bits/string_view.tcc \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLExternal.hpp \
- /usr/include/GL/glew.h /usr/include/c++/11/cstddef /usr/include/GL/glu.h \
- /usr/include/GL/gl.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgOpenGLError.hpp \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgException.hpp \
+ /home/yury47/CG_ATV3/abcg/abcgOpenGLExternal.hpp /usr/include/GL/glew.h \
+ /usr/include/c++/11/cstddef /usr/include/GL/glu.h /usr/include/GL/gl.h \
+ /home/yury47/CG_ATV3/abcg/abcgOpenGLError.hpp \
+ /home/yury47/CG_ATV3/abcg/abcgException.hpp \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \

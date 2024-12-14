@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yury47/Atividade2CG-Olha_o_sapo
+CMAKE_SOURCE_DIR = /home/yury47/CG_ATV3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yury47/Atividade2CG-Olha_o_sapo/build
+CMAKE_BINARY_DIR = /home/yury47/CG_ATV3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles /home/yury47/Atividade2CG-Olha_o_sapo/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yury47/CG_ATV3/build/CMakeFiles /home/yury47/CG_ATV3/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yury47/Atividade2CG-Olha_o_sapo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yury47/CG_ATV3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,6 +168,19 @@ Olha_o_sapo/fast:
 	$(MAKE) $(MAKESILENT) -f examples/Olha_o_sapo/CMakeFiles/Olha_o_sapo.dir/build.make examples/Olha_o_sapo/CMakeFiles/Olha_o_sapo.dir/build
 .PHONY : Olha_o_sapo/fast
 
+#=============================================================================
+# Target rules for targets named viewer4
+
+# Build rule for target.
+viewer4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 viewer4
+.PHONY : viewer4
+
+# fast build rule for target.
+viewer4/fast:
+	$(MAKE) $(MAKESILENT) -f examples/viewer4/CMakeFiles/viewer4.dir/build.make examples/viewer4/CMakeFiles/viewer4.dir/build
+.PHONY : viewer4/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -180,6 +193,7 @@ help:
 	@echo "... abcg"
 	@echo "... fmt"
 	@echo "... imgui"
+	@echo "... viewer4"
 .PHONY : help
 
 

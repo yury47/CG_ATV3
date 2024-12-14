@@ -4,7 +4,7 @@
 # compile CXX with /usr/lib/ccache/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/local/include -I/usr/include/SDL2 -I/home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui
+CXX_INCLUDES = -I/opt/local/include -I/usr/include/SDL2 -I/home/yury47/CG_ATV3/abcg/external/imgui
 
 CXX_FLAGS = -O3 -DNDEBUG
 

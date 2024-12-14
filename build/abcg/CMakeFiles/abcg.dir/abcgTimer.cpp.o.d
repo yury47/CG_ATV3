@@ -1,9 +1,7 @@
 abcg/CMakeFiles/abcg.dir/abcgTimer.cpp.o: \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgTimer.cpp \
- /usr/include/stdc-predef.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/abcgTimer.hpp \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/type_traits \
+ /home/yury47/CG_ATV3/abcg/abcgTimer.cpp /usr/include/stdc-predef.h \
+ /home/yury47/CG_ATV3/abcg/abcgTimer.hpp /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

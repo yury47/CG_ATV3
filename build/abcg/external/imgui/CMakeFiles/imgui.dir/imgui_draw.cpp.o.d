@@ -1,8 +1,8 @@
 abcg/external/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui/imgui_draw.cpp \
+ /home/yury47/CG_ATV3/abcg/external/imgui/imgui_draw.cpp \
  /usr/include/stdc-predef.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui/imgui.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui/imconfig.h \
+ /home/yury47/CG_ATV3/abcg/external/imgui/imgui.h \
+ /home/yury47/CG_ATV3/abcg/external/imgui/imconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/string.h \
@@ -20,7 +20,7 @@ abcg/external/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /usr/include/assert.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui/imgui_internal.h \
+ /home/yury47/CG_ATV3/abcg/external/imgui/imgui_internal.h \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -200,6 +200,6 @@ abcg/external/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui/imstb_textedit.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui/imstb_rectpack.h \
- /home/yury47/Atividade2CG-Olha_o_sapo/abcg/external/imgui/imstb_truetype.h
+ /home/yury47/CG_ATV3/abcg/external/imgui/imstb_textedit.h \
+ /home/yury47/CG_ATV3/abcg/external/imgui/imstb_rectpack.h \
+ /home/yury47/CG_ATV3/abcg/external/imgui/imstb_truetype.h
