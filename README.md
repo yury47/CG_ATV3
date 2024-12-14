@@ -260,4 +260,4 @@ Este shader prepara os dados necessários para o shader de fragmento, incluindo 
 
 # Referências
 
-[Site da disciplina Computação Gráfica](https://hbatagelo.github.io/cg/)
+[Site da disciplina Computação Gráfica](https://hbatagelo.github.io/cg/) - Capítulos 8, 9 e 10.
