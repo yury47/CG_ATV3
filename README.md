@@ -7,10 +7,17 @@
 ## Introdução
 O objetivo principal do aplicativo é permitir que o usuário explore e modifique um objeto 3D de forma interativa. O controle da rotação e iluminação do objeto oferece uma visualização completa de suas características intrínsecas, enquanto o controle das propriedades da luz e do material, permite ao usuário ajustar a aparência estética do objeto de acordo com suas preferências.
 
-A ideia por trás da concepção deste aplicativo é a criação de um catálogo de espécies que poderia ser utilizado em um contexto educacional, especialmente em aulas de biologia ou alguma disciplina que demande um detalhamento mais profundo de características de espécimes. O aplicativo permite que diferentes modelos de animais ou plantas sejam visualizados em 3D, possibilitando uma análise detalhada das características desses organismos. A capacidade de modificar propriedades do modelo também pode ser útil para destacar características específicas, como diferentes partes do corpo ou variabilidade genética, proporcionando uma experiência de aprendizagem interativa e visual.
+A ideia por trás da concepção deste aplicativo é a criação de um catálogo de espécies que poderia ser utilizado em um contexto educacional, especialmente em aulas de biologia ou alguma disciplina que demande um detalhamento mais profundo de características de espécimes. O aplicativo permite que diferentes modelos de animais ou plantas sejam visualizados em 3D, que podem ser alternados dinamicamente, possibilitando uma análise detalhada das características desses organismos. A capacidade de modificar propriedades do modelo também pode ser útil para destacar características específicas, como diferentes partes do corpo ou variabilidade genética, proporcionando uma experiência de aprendizagem interativa e visual em tempo real.
 
-## Funcionamento do Aplicativo
-Este aplicativo é um visualizador 3D interativo que permite rotacionar um objeto 3D e alterar suas cores. Ele utiliza o conceito de Trackball para realizar a rotação do modelo e permite que o usuário modifique a intensidade das cores do objeto através de botões de controle.
+# Funcionalidades Principais
+Permite a aplicação de texturas personalizadas (“mapeamento de imagem”) aos modelos, carregadas a partir de arquivos no formato .jpg ou .png. O controle de iluminação possibilita o ajuste das propriedades de intensidade da luz ambiental (Ia), difusa (Id) e especular (Is). As propriedades dos materiais são feitas através do ajuste dinâmico das propriedades ka (reflexão ambiental), kd (reflexão difusa) e ks (reflexão especular) de cada modelo. Controle do expoente especular, que define o espalhamento do brilho especular. A implementação do um modelo de iluminação foi baseada no modelo de Blinn-Phong, com controles detalhados sobre os componentes especulares e difusos. Proporciona interatividade avançada permitindo ao usuário rotacionar os modelos em todas as direções utilizando uma interface TrackBall e fazer o ajuste dinâmico das cores baseadas na intensidade dos valores RGB. Além disso permite alternância entre objetos, permitindo alternar entre eles para comparações e explorações visuais.
+
+## Guia de Utilização
+A interação com o aplicativo é simples e intuitiva, permitindo uma experiência fluida para usuários de todos os níveis. 
+
+# Ajuste de Propriedades de Materiais e Luzes
+
+É possível alterar os valores dos componentes RGB das constantes ka, kd, ks, Ia, Id e Is. Os ajustes podem ser feitos por meio de uma paleta de cores, clicando no quadrado de cor ao lado da constante que se deseja alterar, ou alterando diretamente os valores de cada componente RGB individualmenteo que pode ser feito de duas formas; clicando em cima da componente que se deseja alterar a arrastando o mouse para a direita ou esquerda, ou clicando duas vezes sobre a componente e digitar um valor específico.   
 
 ### Interações
 Rotação do Objeto
