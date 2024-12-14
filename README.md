@@ -28,6 +28,14 @@ Utilize o botão “Load 3D Model” para carregar diferentes arquivos .obj, que
 
 Essas funcionalidades permitem explorar e manipular os modelos e suas características de forma interativa e visualmente rica.
 
+# Vídeo de demonstração
+Para ver o aplicativo funcionando, [clique aqui](https://drive.google.com/file/d/1OGZeqfUua4DHcL3dYxXEdSG1qNi08lK4/view?usp=drive_link).
+
+# Rodando em WebAssembly
+Os binários WebAssembly foram compilados e estão disponíveis na pasta **public** deste repositório. 
+Criamos um site do **GitHub Pages** para permitir o acesso direto ao aplicativo.
+Basta entrar no link [Olha_o_sapo](https://karleloy.github.io/Atividade2CG-Olha_o_sapo/public/Olha_o_sapo.html).
+
 # Projeto e Desenvolvimento
 O projeto foi desenvolvido com foco em atender aos requisitos da atividade, como os que seguem.
 
@@ -50,17 +58,6 @@ Suporte ao carregamento de texturas externas e aplicação nos modelos por mapea
 Algumas texturas não ficaram alinhadas corretamente, apresentando distorção devido a problemas no mapeamento UV. Como solução, ajustamos os algoritmos de carregamento para garantir que as coordenadas UV fossem corretamente interpretadas do arquivo OBJ.
 Outro problema ocorreu quando objetos foram carregados sem a textura correta. Durante a inicialização, alguns modelos carregados apareciam sem a textura associada, mesmo com o arquivo .mtl disponível. Para corrigir alteramos a implementação de `Model::loadObj` para validar se a textura estava carregada corretamente antes de ativar o pipeline de renderização. Também adicionamos verificações para recarregar texturas ausentes dinamicamente.
 Além disso foi necessário ajuste do posicionamento inicial pois os modelos carregados não estavam bem posicionados na janela, dificultando a visualização inicial. Foi necessário o ajuste de coordenadas para garantir que todos os objetos carregados ficassem melhor posicionados.
-
-# Vídeo de demonstração
-
-Para ver o aplicativo funcionando, [clique aqui](https://drive.google.com/file/d/1OGZeqfUua4DHcL3dYxXEdSG1qNi08lK4/view?usp=drive_link).
-
-## Rodando em WebAssembly
-Os binários WebAssembly foram compilados e estão disponíveis na pasta **public** deste repositório. 
-
-Criamos um site do **GitHub Pages** para permitir o acesso direto ao aplicativo.
-
-Basta entrar no link [Olha_o_sapo](https://karleloy.github.io/Atividade2CG-Olha_o_sapo/public/Olha_o_sapo.html).
 
 # Arquivos
 
