@@ -32,7 +32,7 @@ Essas funcionalidades permitem explorar e manipular os modelos e suas caracterí
 
 # Vídeo de demonstração
 
-Para ver o jogo funcionando, [clique aqui](https://drive.google.com/file/d/1OGZeqfUua4DHcL3dYxXEdSG1qNi08lK4/view?usp=drive_link).
+Para ver o aplicativo funcionando, [clique aqui](https://drive.google.com/file/d/1OGZeqfUua4DHcL3dYxXEdSG1qNi08lK4/view?usp=drive_link).
 
 # Arquivos
 
