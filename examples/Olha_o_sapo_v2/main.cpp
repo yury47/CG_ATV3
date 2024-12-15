@@ -9,8 +9,10 @@ int main(int argc, char **argv) {
     window.setWindowSettings({
         .width = 800,
         .height = 800,
+        .showFPS = false,
+        .showFullscreenButton = false,
         .title = "Visualizador de Modelos 3D (2a versao)",
-    });
+      });
 
     app.run(window);
   } catch (std::exception const &exception) {
