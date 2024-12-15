@@ -196,47 +196,6 @@ void Window::onPaintUI() {
         fileDialogTex.Open();
     }
 
-    // Slider will be stretched horizontally
-    /*ImGui::PushItemWidth(widgetSize.x - 16);
-    ImGui::SliderInt(" ", &m_trianglesToDraw, 0, m_model.getNumTriangles(),
-                     "%d triangles");
-    ImGui::PopItemWidth();*/
-
-    /*static bool faceCulling{};
-    ImGui::Checkbox("Back-face culling", &faceCulling);
-
-    if (faceCulling) {
-      abcg::glEnable(GL_CULL_FACE);
-    } else {
-      abcg::glDisable(GL_CULL_FACE);
-    }*/
-
-    // CW/CCW combo box
-    /*{
-      static std::size_t currentIndex{};
-      std::vector<std::string> const comboItems{"CCW", "CW"};
-
-      ImGui::PushItemWidth(120);
-      if (ImGui::BeginCombo("Front face",
-                            comboItems.at(currentIndex).c_str())) {
-        for (auto const index : iter::range(comboItems.size())) {
-          auto const isSelected{currentIndex == index};
-          if (ImGui::Selectable(comboItems.at(index).c_str(), isSelected))
-            currentIndex = index;
-          if (isSelected)
-            ImGui::SetItemDefaultFocus();
-        }
-        ImGui::EndCombo();
-      }
-      ImGui::PopItemWidth();
-
-      if (currentIndex == 0) {
-        abcg::glFrontFace(GL_CCW);
-      } else {
-        abcg::glFrontFace(GL_CW);
-      }
-    }*/
-
     // Projection combo box
     {
       static std::size_t currentIndex{};
@@ -294,29 +253,6 @@ void Window::onPaintUI() {
     if (!m_model.isUVMapped()) {
       ImGui::TextColored(ImVec4(1, 1, 0, 1), "Mesh has no UV coords.");
     }
-
-    // UV mapping box
-    /*{
-      std::vector<std::string> comboItems{"Triplanar", "Cylindrical",
-                                          "Spherical"};
-
-      if (m_model.isUVMapped())
-        comboItems.emplace_back("From mesh");
-
-      ImGui::PushItemWidth(120);
-      if (ImGui::BeginCombo("UV mapping",
-                            comboItems.at(m_mappingMode).c_str())) {
-        for (auto const index : iter::range(comboItems.size())) {
-          auto const isSelected{m_mappingMode == static_cast<int>(index)};
-          if (ImGui::Selectable(comboItems.at(index).c_str(), isSelected))
-            m_mappingMode = index;
-          if (isSelected)
-            ImGui::SetItemDefaultFocus();
-        }
-        ImGui::EndCombo();
-      }
-      ImGui::PopItemWidth();
-    }*/
 
     ImGui::End();
   }
