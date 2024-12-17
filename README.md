@@ -28,9 +28,6 @@ Utilize o botão “Load 3D Model” para carregar diferentes arquivos .obj, que
 
 Essas funcionalidades permitem explorar e manipular os modelos e suas características de forma interativa e visualmente rica.
 
-# Vídeo de demonstração
-Para ver o aplicativo funcionando, [clique aqui](https://drive.google.com/file/d/1OGZeqfUua4DHcL3dYxXEdSG1qNi08lK4/view?usp=drive_link).
-
 # Rodando em WebAssembly
 Os binários WebAssembly foram compilados e estão disponíveis na pasta **public** deste repositório. 
 Criamos um site do **GitHub Pages** para permitir o acesso direto ao aplicativo.
