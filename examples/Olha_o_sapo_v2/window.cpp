@@ -158,7 +158,6 @@ void Window::onPaintUI() {
   fileDialogTex.SetWindowSize(scaledWidth, scaledHeight);
 
 #if defined(__EMSCRIPTEN__)
-  auto const assetsPath{abcg::Application::getAssetsPath()};
   fileDialogModel.SetPwd(assetsPath);
   fileDialogTex.SetPwd(assetsPath + "/maps");
 #endif
