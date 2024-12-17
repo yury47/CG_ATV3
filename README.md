@@ -1,6 +1,7 @@
 # (4) Olha o sapo 2 - 19/12/2024
 ## Discentes
 - Karl Eloy Marques Henrique
+- Francisco Yury Pinheiro Silva
 
 # Introdução
 O objetivo principal do aplicativo é permitir que o usuário explore e modifique um objeto 3D de forma interativa. O controle da rotação e iluminação do objeto oferece uma visualização completa de suas características intrínsecas, enquanto o controle das propriedades da luz e do material, permite ao usuário ajustar a aparência estética do objeto de acordo com suas preferências.
