@@ -31,7 +31,7 @@ Essas funcionalidades permitem explorar e manipular os modelos e suas caracterí
 # Rodando em WebAssembly
 Os binários WebAssembly foram compilados e estão disponíveis na pasta **public** deste repositório. 
 Criamos um site do **GitHub Pages** para permitir o acesso direto ao aplicativo.
-Basta entrar no link [Olha_o_sapo](https://karleloy.github.io/Atividade2CG-Olha_o_sapo/public/Olha_o_sapo.html).
+Basta entrar no link [Olha_o_sapo v2](https://karleloy.github.io/Atividade2CG-Olha_o_sapo/public/Olha_o_sapo.html).
 
 # Projeto e Desenvolvimento
 O projeto foi desenvolvido com foco em atender aos requisitos da atividade, como os que seguem.
