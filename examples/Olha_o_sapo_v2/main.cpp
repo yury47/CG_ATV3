@@ -8,10 +8,10 @@ int main(int argc, char **argv) {
     window.setOpenGLSettings({.samples = 4});
     window.setWindowSettings({
         .width = 800,
-        .height = 800,
+        .height = 600,
         .showFPS = false,
         .showFullscreenButton = false,
-        .title = "Visualizador de Modelos 3D (2a versao)",
+        .title = "Visualizador de Animais 3D",
       });
 
     app.run(window);

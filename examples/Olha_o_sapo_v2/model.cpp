@@ -75,7 +75,7 @@ void Model::loadDiffuseTexture(std::string_view path) {
   m_diffuseTexture = abcg::loadOpenGLTexture({.path = path});
 }
 
-void Model::loadObj(std::string_view path, bool standardize) {
+/*void Model::loadObj(std::string_view path, bool standardize) {
   auto const basePath{std::filesystem::path{path}.parent_path().string() + "/"};
 
   tinyobj::ObjReaderConfig readerConfig;
@@ -183,6 +183,131 @@ void Model::loadObj(std::string_view path, bool standardize) {
 
   createBuffers();
 }
+*/
+
+//TENTATIVA DO CHAT GPT
+void Model::loadObj(std::string_view path, bool standardize) {
+  auto const basePath{std::filesystem::path{path}.parent_path().string() + "/"};
+
+  tinyobj::ObjReaderConfig readerConfig;
+  readerConfig.mtl_search_path = basePath; // Path to material files
+
+  tinyobj::ObjReader reader;
+
+  if (!reader.ParseFromFile(path.data(), readerConfig)) {
+    if (!reader.Error().empty()) {
+      throw abcg::RuntimeError(
+          fmt::format("Failed to load model {} ({})", path, reader.Error()));
+    }
+    throw abcg::RuntimeError(fmt::format("Failed to load model {}", path));
+  }
+
+  if (!reader.Warning().empty()) {
+    fmt::print("Warning: {}\n", reader.Warning());
+  }
+
+  auto const &attrib{reader.GetAttrib()};
+  auto const &shapes{reader.GetShapes()};
+  auto const &materials{reader.GetMaterials()};
+
+  m_vertices.clear();
+  m_indices.clear();
+
+  m_hasNormals = false;
+  m_hasTexCoords = false;
+
+  // A key:value map with key=Vertex and value=index
+  std::unordered_map<Vertex, GLuint> hash{};
+
+  // Create rotation matrices for X and Y axes
+  glm::mat4 rotationX = glm::rotate(glm::mat4(1.0f), glm::radians(270.0f), glm::vec3(1.0f, 0.0f, 0.0f)); // 90 degrees around X-axis
+  glm::mat4 rotationY = glm::rotate(glm::mat4(1.0f), glm::radians(180.0f), glm::vec3(0.0f, 1.0f, 0.0f)); // 90 degrees around Y-axis
+  
+  // Combine the two rotations (X rotation followed by Y rotation)
+  glm::mat4 combinedRotation = rotationY * rotationX;
+
+  // Loop over shapes
+  for (auto const &shape : shapes) {
+    // Loop over indices
+    for (auto const offset : iter::range(shape.mesh.indices.size())) {
+      // Access to vertex
+      auto const index{shape.mesh.indices.at(offset)};
+
+      // Position
+      auto const startIndex{3 * index.vertex_index};
+      glm::vec3 position{attrib.vertices.at(startIndex + 0),
+                         attrib.vertices.at(startIndex + 1),
+                         attrib.vertices.at(startIndex + 2)};
+
+      // Apply the combined rotation to the vertex position
+      position = glm::vec3(combinedRotation * glm::vec4(position, 1.0f));
+
+      // Normal
+      glm::vec3 normal{};
+      if (index.normal_index >= 0) {
+        m_hasNormals = true;
+        auto const normalStartIndex{3 * index.normal_index};
+        normal = {attrib.normals.at(normalStartIndex + 0),
+                  attrib.normals.at(normalStartIndex + 1),
+                  attrib.normals.at(normalStartIndex + 2)};
+        // Apply the combined rotation to the normal as well
+        normal = glm::normalize(glm::vec3(combinedRotation * glm::vec4(normal, 0.0f)));
+      }
+
+      // Texture coordinates
+      glm::vec2 texCoord{};
+      if (index.texcoord_index >= 0) {
+        m_hasTexCoords = true;
+        auto const texCoordsStartIndex{2 * index.texcoord_index};
+        texCoord = {attrib.texcoords.at(texCoordsStartIndex + 0),
+                    attrib.texcoords.at(texCoordsStartIndex + 1)};
+      }
+
+      Vertex const vertex{
+          .position = position, .normal = normal, .texCoord = texCoord};
+
+      // If hash doesn't contain this vertex
+      if (!hash.contains(vertex)) {
+        // Add this index (size of m_vertices)
+        hash[vertex] = m_vertices.size();
+        // Add this vertex
+        m_vertices.push_back(vertex);
+      }
+
+      m_indices.push_back(hash[vertex]);
+    }
+  }
+
+  // Use properties of first material, if available
+  if (!materials.empty()) {
+    auto const &mat{materials.at(0)}; // First material
+    m_Ka = {mat.ambient[0], mat.ambient[1], mat.ambient[2], 1};
+    m_Kd = {mat.diffuse[0], mat.diffuse[1], mat.diffuse[2], 1};
+    m_Ks = {mat.specular[0], mat.specular[1], mat.specular[2], 1};
+    m_shininess = mat.shininess;
+
+    if (!mat.diffuse_texname.empty())
+      loadDiffuseTexture(basePath + mat.diffuse_texname);
+  } else {
+    // Default values
+    m_Ka = {0.1f, 0.1f, 0.1f, 1.0f};
+    m_Kd = {0.7f, 0.7f, 0.7f, 1.0f};
+    m_Ks = {1.0f, 1.0f, 1.0f, 1.0f};
+    m_shininess = 25.0f;
+  }
+
+  if (standardize) {
+    Model::standardize();
+  }
+
+  if (!m_hasNormals) {
+    computeNormals();
+  }
+
+  createBuffers();
+}
+
+//FINAL DA TENTATIVA DO CHAT GPT
 
 void Model::render(int numTriangles) const {
   abcg::glBindVertexArray(m_VAO);
