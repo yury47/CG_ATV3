@@ -25,7 +25,7 @@ A constante que define o espalhamento do brilho especular pode ser aumentada ou 
 O objeto 3D pode ser rotacionado em todas as direções utilizando o mouse. Use o botão esquerdo do mouse para rotacionar o modelo em qualquer direção. A rotação é suave e precisa, proporcionando uma experiência de visualização imersiva. O ponto de iluminação também pode ser alterado usando o botão direito do mouse para ajustar a posição da luz em relação ao modelo.
 
 #### Alteração entre Objetos
-Utilize o botão “Load 3D Model” para carregar diferentes arquivos .obj, que correspondem a diferentes espécies que se deseja estudar durante a execução do aplicativo.
+Utilize o botão “File” e em seguida "Load 3D Model" para carregar diferentes arquivos .obj (modelos), que correspondem a diferentes espécies que se deseja estudar durante a execução do aplicativo. Após selecionar o modelo, utilize novamente o botão "File" e depois "Load Diffuse Texture" para selecionar a textura correspondente ao modelo escolhido.
 
 Essas funcionalidades permitem explorar e manipular os modelos e suas características de forma interativa e visualmente rica.
 
